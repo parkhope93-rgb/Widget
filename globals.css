@@ -1,0 +1,72 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: #2D7C31;
+}
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background: none;
+  outline: none;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+/* @FONTWARNING[{"type": "restricted", "family": "42dot Sans-Light", "weight": "300", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "42dot Sans-Light";
+  src: local("42dot Sans-Light");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Noto Sans-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Noto Sans-SemiBold";
+  src: local("Noto Sans-SemiBold");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "42dot Sans-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "42dot Sans-Bold";
+  src: local("42dot Sans-Bold");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "42dot Sans-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "42dot Sans-Medium";
+  src: local("42dot Sans-Medium");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "Borel-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Borel-Regular";
+  src: local("Borel-Regular");
+}
+/* @FONTWARNING[{"type": "restricted", "family": "42dot Sans-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "42dot Sans-Regular";
+  src: local("42dot Sans-Regular");
+}
