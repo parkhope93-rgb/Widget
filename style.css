@@ -290,6 +290,7 @@
 }
 
 .toggle-form-btn {
+  position: relative;
   width: 3.875rem;
   height: 3.875rem;
   padding: 0;
@@ -304,8 +305,26 @@
 }
 
 .toggle-form-btn img {
-  width: 1.35rem;
-  height: 1.35rem;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.toggle-form-btn::before,
+.toggle-form-btn::after {
+  content: "";
+  position: absolute;
+  width: 1.15rem;
+  height: 0.18rem;
+  background: #f9fffb;
+  border-radius: 2px;
+}
+
+.toggle-form-btn::before {
+  transform: rotate(45deg);
+}
+
+.toggle-form-btn::after {
+  transform: rotate(-45deg);
 }
