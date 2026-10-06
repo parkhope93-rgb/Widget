@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="utf-8">
@@ -13,141 +13,71 @@
 </head>
 
 <body>
-    <main class="to-do">
+    <main class="to-do" data-view="todo">
         <header>
             <nav class="weekbox">
-                <button class="week-nav-btn prev-week" type="button">
-                    <img class="icon week-icon" src="img/lastweek.svg" alt="previous week">
+                <button class="week-nav-btn prev-week" type="button" data-action="prev-week" aria-label="이전 주">
+                    <img class="icon week-icon" src="img/lastweek.svg" alt="">
                 </button>
-                <button class="datebutton" type="button">
-                    <span class="day-r">S</span>
-                    <time class="date-r" datetime="2026-09-06">6</time>
-                </button>
-                <button class="datebutton active" type="button">
-                    <span class="day">M</span>
-                    <time class="date" datetime="2026-09-07">7</time>
-                </button>
-                <button class="datebutton" type="button">
-                    <span class="day">T</span>
-                    <time class="date" datetime="2026-09-08">8</time>
-                </button>
-                <button class="datebutton" type="button">
-                    <span class="day">W</span>
-                    <time class="date" datetime="2026-09-09">9</time>
-                </button>
-                <button class="datebutton" type="button">
-                    <span class="day">T</span>
-                    <time class="date" datetime="2026-09-10">10</time>
-                </button>
-                <button class="datebutton" type="button">
-                    <span class="day">F</span>
-                    <time class="date" datetime="2026-09-11">11</time>
-                </button>
-                <button class="datebutton" type="button">
-                    <span class="day-b">S</span>
-                    <time class="date-b" datetime="2026-09-12">12</time>
-                </button>
-                <button class="week-nav-btn next-week" type="button">
-                    <img class="icon week-icon" src="img/lastweek.svg" alt="next week">
+                <div class="week-days">
+                    <span class="date-slider" aria-hidden="true"></span>
+                    <button class="datebutton" type="button" data-action="select-date"></button>
+                    <button class="datebutton" type="button" data-action="select-date"></button>
+                    <button class="datebutton" type="button" data-action="select-date"></button>
+                    <button class="datebutton" type="button" data-action="select-date"></button>
+                    <button class="datebutton" type="button" data-action="select-date"></button>
+                    <button class="datebutton" type="button" data-action="select-date"></button>
+                    <button class="datebutton" type="button" data-action="select-date"></button>
+                </div>
+                <button class="week-nav-btn next-week" type="button" data-action="next-week" aria-label="다음 주">
+                    <img class="icon week-icon" src="img/lastweek.svg" alt="">
                 </button>
             </nav>
             <nav class="filterbox">
-                <button class="filter active" type="button">
-                    <img class="icon filter-icon" src="img/Circular.svg" alt="filter icon">
+                <span class="filter-slider" aria-hidden="true"></span>
+                <button class="filter is-active" type="button" data-action="switch-view" data-view="todo">
+                    <img class="icon filter-icon" src="img/Circular.svg" alt="">
                     <span class="filter-text">To-do</span>
                 </button>
-                <button class="filter" type="button">
-                    <img class="icon filter-icon" src="img/Check.svg" alt="filter icon">
+                <button class="filter" type="button" data-action="switch-view" data-view="done">
+                    <img class="icon filter-icon" src="img/Check.svg" alt="">
                     <span class="filter-text">Done</span>
                 </button>
-                <button class="filter" type="button">
-                    <img class="icon filter-icon" src="img/Clock.svg" alt="filter icon">
+                <button class="filter" type="button" data-action="switch-view" data-view="hold">
+                    <img class="icon filter-icon" src="img/Clock.svg" alt="">
                     <span class="filter-text">In Hold</span>
                 </button>
             </nav>
         </header>
-        <div class="categorybox">
-            <section class="category">
-                <div class="category-header">
-                    <img class="icon cate-icon" src="img/Calendar.svg" alt="calendar icon">
-                    <h2 class="cate-title">SCHEDULE</h2>
-                </div>
-                <div class="category-content">
-                    <div class="todo-item">
-                        <input class="todo-check" type="checkbox" id="task-1">
-                        <label class="todo-text" for="task-1">18시 데사수2</label>
-                        <button class="icon listfunction-icon">
-                            <img src="img/holdarrow.svg" alt="hold arrow icon">
-                        </button>
-                        <button class="icon listfunction-icon">
-                            <img src="img/trash.svg" alt="delete icon">
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="category">
-                <div class="category-header">
-                    <img class="icon cate-icon" src="img/skku.svg" alt="skku icon">
-                    <h2 class="cate-title">SKKU</h2>
-                </div>
-                <div class="category-content">
-                    <!-- 나중에 투두 추가 -->
-                </div>
-            </section>
-            <section class="category">
-                <div class="category-header">
-                    <img class="icon cate-icon" src="img/esf.svg" alt="esf icon">
-                    <h2 class="cate-title">ESF</h2>
-                </div>
-                <div class="category-content">
-                    <!-- 나중에 투두 추가 -->
-                </div>
-            </section>
-            <section class="category">
-                <div class="category-header">
-                    <img class="icon cate-icon" src="img/mrcc.svg" alt="mrcc icon">
-                    <h2 class="cate-title">MRCC</h2>
-                </div>
-                <div class="category-content">
-                    <!-- 나중에 투두 추가 -->
-                </div>
-            </section>
-            <section class="category">
-                <div class="category-header">
-                    <img class="icon cate-icon" src="img/guitar.svg" alt="guitar icon">
-                    <h2 class="cate-title">GUITAR</h2>
-                </div>
-                <div class="category-content">
-                    <!-- 나중에 투두 추가 -->
-                </div>
-            </section>
+        <div class="list-wrap">
+            <p class="hold-watermark" aria-hidden="true">MIRUJI MARA</p>
+            <div class="categorybox" id="item-list"></div>
         </div>
         <div class="composer">
-            <form class="addbox">
-                <input class="task-input" type="text" placeholder="또 뭘 해야 하니~">
+            <form class="addbox" id="add-form">
+                <input class="task-input" type="text" placeholder="또 뭘 해야 하니~" autocomplete="off">
                 <div class="add-buttons">
-                    <button class="icon add-icon" type="button">
-                        <img src="img/add_cal.svg" alt="schedule">
+                    <button class="add-icon is-selected" type="button" data-action="select-category" data-category="SCHEDULE">
+                        <img src="img/add_cal_icon.svg" alt="SCHEDULE">
                     </button>
-                    <button class="icon add-icon" type="button">
-                        <img src="img/add_skku.svg" alt="skku">
+                    <button class="add-icon" type="button" data-action="select-category" data-category="SKKU">
+                        <img src="img/add_skku_icon.svg" alt="SKKU">
                     </button>
-                    <button class="icon add-icon" type="button">
-                        <img src="img/add_esf.svg" alt="esf">
+                    <button class="add-icon" type="button" data-action="select-category" data-category="ESF">
+                        <img src="img/esf.svg" alt="ESF">
                     </button>
-                    <button class="icon add-icon" type="button">
-                        <img src="img/add_mrcc.svg" alt="mrcc">
+                    <button class="add-icon" type="button" data-action="select-category" data-category="MRCC">
+                        <img src="img/add_mrcc_icon.svg" alt="MRCC">
                     </button>
-                    <button class="icon add-icon" type="button">
-                        <img src="img/add_gui.svg" alt="guitar">
+                    <button class="add-icon" type="button" data-action="select-category" data-category="GUITAR">
+                        <img src="img/guitar.svg" alt="GUITAR">
                     </button>
                 </div>
             </form>
-            <button class="toggle-form-btn" type="button" aria-label="close add form">
-                <img src="img/add_button.svg" alt="">
-            </button>
+            <button class="toggle-form-btn" type="button" data-action="toggle-panel" aria-label="할 일 추가"></button>
         </div>
     </main>
+    <script src="app.js"></script>
 </body>
 
 </html>

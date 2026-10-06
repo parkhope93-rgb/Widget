@@ -1,4 +1,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+:root {
+  --ease: ease-in-out;
+  --dur: 300ms;
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
