@@ -287,6 +287,8 @@
   width: 85%;
   height: 100%;
   resize: none;
+  border: none;
+  outline: none;
   border-radius: 2rem;
   background: #eff8ef;
   padding: 1.2rem 1.3rem;
