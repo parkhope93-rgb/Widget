@@ -20,7 +20,7 @@ body {
   width: fit-content;
   height: fit-content;
   min-height: 0;
-  background: #000000;
+  background: #f9fffb;
   display: flex;
   flex-direction: column;
   justify-content: center;

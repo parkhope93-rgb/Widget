@@ -246,9 +246,9 @@
 .page-tab {
   position: relative;
   padding: 0 0.15rem 0.7rem;
-  font-family: "42dot Sans", sans-serif;
+  font-family: "42dot Sans-Bold", sans-serif;
   font-size: 3.15rem;
-  font-weight: 700;
+  font-weight: 1000;
   color: #c5ddc7;
 }
 
