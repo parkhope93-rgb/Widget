@@ -368,7 +368,7 @@
   -webkit-appearance: none;
   width: 1.7rem;
   height: 1.7rem;
-  border: 1.8px solid #2d7c31;
+  border: 1.4px solid #2d7c31;
   border-radius: 30%;
   flex-shrink: 0;
   cursor: pointer;
@@ -388,8 +388,8 @@
   content: "";
   width: 0.75rem;
   height: 0.4rem;
-  border-left: 1.8px solid #f9fffb;
-  border-bottom: 1.8px solid #f9fffb;
+  border-left: 1.4px solid #f9fffb;
+  border-bottom: 1.4px solid #f9fffb;
   transform: rotate(-45deg) translateY(-0.0rem);
   position: absolute;
   top: 0.356rem;
@@ -405,7 +405,7 @@
 }
 
 .listfunction-icon {
-  width: 19.5rem;
+  width: 3.5rem;
   height: 1.5rem;
   padding: 0;
   display: flex;
