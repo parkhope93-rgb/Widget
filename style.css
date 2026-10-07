@@ -454,8 +454,8 @@
 }
 
 .addbox {
-  width: 20.4375rem;
-  height: 9.1875rem;
+  width: 24.4375rem;
+  height: 11.1875rem;
   border-radius: 1.75rem;
   border: 1px solid #deede0;
   background: #f9fffb;
@@ -481,14 +481,14 @@
 }
 
 .task-input {
-  width: 18.25rem;
-  height: 3.7875rem;
+  width: 22.25rem;
+  height: 4.7875rem;
   border-radius: 0.75rem;
   background: #eff8ef;
   margin: 1.06rem 1.13rem 0 1.06rem;
   padding: 0 1rem;
   font-family: "42dot Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #2d7c31;
 }
 
@@ -505,8 +505,8 @@
 }
 
 .add-icon {
-  width: 3rem;
-  height: 2rem;
+  width: 3.6rem;
+  height: 3rem;
   padding: 0;
   border-radius: 999px;
   border: 1px solid #deede0;
@@ -519,8 +519,8 @@
 
 .add-icon img {
   display: block;
-  width: 1.05rem;
-  height: 1.05rem;
+  width: 1.7rem;
+  height: 1.7rem;
   object-fit: contain;
 }
 
