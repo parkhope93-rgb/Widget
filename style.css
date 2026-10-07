@@ -535,9 +535,10 @@
 
 .toggle-form-btn {
   position: relative;
-  width: 3.875rem;
-  height: 3.875rem;
+  width: 4.875rem;
+  height: 4.875rem;
   padding: 0;
+  margin-left: 1.2rem;
   border-radius: 50%;
   background: #2d7c31;
   box-shadow: 10px 15px 22.8px rgba(0, 0, 0, 0.08);
@@ -553,13 +554,13 @@
 .toggle-form-btn::after {
   content: "";
   position: absolute;
-  width: 1.4rem;
+  width: 1.7rem;
   height: 0.2rem;
   background: #f9fffb;
   border-radius: 2px;
   position: absolute;
-  top: 1.9rem;
-  left: 1.24rem;
+  top: 2.32rem;
+  left: 1.59rem;
 }
 
 .toggle-form-btn::after {
