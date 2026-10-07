@@ -13,49 +13,58 @@
 </head>
 
 <body>
-    <main class="to-do" data-view="todo">
-        <header>
-            <nav class="weekbox">
-                <button class="week-nav-btn prev-week" type="button" data-action="prev-week" aria-label="이전 주">
-                    <img class="icon week-icon" src="img/lastweek.svg" alt="">
-                </button>
-                <div class="week-days">
-                    <span class="date-slider" aria-hidden="true"></span>
-                    <button class="datebutton" type="button" data-action="select-date"></button>
-                    <button class="datebutton" type="button" data-action="select-date"></button>
-                    <button class="datebutton" type="button" data-action="select-date"></button>
-                    <button class="datebutton" type="button" data-action="select-date"></button>
-                    <button class="datebutton" type="button" data-action="select-date"></button>
-                    <button class="datebutton" type="button" data-action="select-date"></button>
-                    <button class="datebutton" type="button" data-action="select-date"></button>
+    <main class="to-do" data-page="todo" data-view="todo">
+        <div class="board">
+            <section class="board-left">
+                <div class="brand">
+                    <img class="mascot" src="img/왈랄라씨.png" alt="">
+                    <p class="slogan">왈랄라하게 살자!</p>
                 </div>
-                <button class="week-nav-btn next-week" type="button" data-action="next-week" aria-label="다음 주">
-                    <img class="icon week-icon" src="img/lastweek.svg" alt="">
-                </button>
-            </nav>
-            <nav class="filterbox">
-                <span class="filter-slider" aria-hidden="true"></span>
-                <button class="filter is-active" type="button" data-action="switch-view" data-view="todo">
-                    <img class="icon filter-icon" src="img/Circular.svg" alt="">
-                    <span class="filter-text">To-do</span>
-                </button>
-                <button class="filter" type="button" data-action="switch-view" data-view="done">
-                    <img class="icon filter-icon" src="img/Check.svg" alt="">
-                    <span class="filter-text">Done</span>
-                </button>
-                <button class="filter" type="button" data-action="switch-view" data-view="hold">
-                    <img class="icon filter-icon" src="img/Clock.svg" alt="">
-                    <span class="filter-text">In Hold</span>
-                </button>
-            </nav>
-        </header>
-        <div class="list-wrap">
-            <p class="hold-watermark" aria-hidden="true">MIRUJI MARA</p>
-            <div class="categorybox" id="item-list"></div>
+                <div class="calendar">
+                    <div class="calendar-toolbar">
+                        <h2 class="calendar-month" id="calendar-month"></h2>
+                        <div class="done-count">
+                            <span class="done-badge" aria-hidden="true"></span>
+                            <span id="done-count-num">0</span>
+                        </div>
+                        <div class="month-nav">
+                            <button class="month-nav-btn" type="button" data-action="prev-month" aria-label="이전 달">
+                                <img class="week-icon" src="img/lastweek.svg" alt="">
+                            </button>
+                            <button class="month-nav-btn next-month" type="button" data-action="next-month" aria-label="다음 달">
+                                <img class="week-icon" src="img/lastweek.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="calendar-weekdays" aria-hidden="true">
+                        <span class="is-sun">S</span>
+                        <span>M</span>
+                        <span>T</span>
+                        <span>W</span>
+                        <span>T</span>
+                        <span>F</span>
+                        <span class="is-sat">S</span>
+                    </div>
+                    <div class="calendar-grid" id="calendar-grid"></div>
+                </div>
+            </section>
+            <section class="board-right">
+                <nav class="page-tabs">
+                    <button class="page-tab is-active" type="button" data-action="switch-page" data-page="todo">To Do</button>
+                    <button class="page-tab" type="button" data-action="switch-page" data-page="memo">Memo</button>
+                </nav>
+                <div class="list-wrap">
+                    <p class="hold-watermark" aria-hidden="true">MIRUJI MARA</p>
+                    <div class="categorybox" id="item-list"></div>
+                </div>
+                <div class="memo-wrap">
+                    <textarea class="memo-input" id="memo-input" placeholder="풰"></textarea>
+                </div>
+            </section>
         </div>
         <div class="composer">
             <form class="addbox" id="add-form">
-                <input class="task-input" type="text" placeholder="또 뭘 해야 하니~" autocomplete="off">
+                <input class="task-input" type="text" placeholder="또 뭐 왜 그만해 하지마" autocomplete="off">
                 <div class="add-buttons">
                     <button class="add-icon is-selected" type="button" data-action="select-category" data-category="SCHEDULE">
                         <img src="img/add_cal_icon.svg" alt="SCHEDULE">
